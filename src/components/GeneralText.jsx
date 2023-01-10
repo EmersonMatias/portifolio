@@ -28,9 +28,9 @@ const Container = styled.div`
     h3{
         font-size: 3.4rem;
         line-height: 4.4rem;
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 1.6rem;
-        background: -webkit-linear-gradient(45deg, rgba(121, 60, 161, 1) 0%, rgba(240, 123, 44, 1) 25%);
+        background: -webkit-linear-gradient(91deg, rgba(121, 60, 161, 1) 0%, rgba(240, 123, 44, 1) 90%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Header from "../../components/Header"
+import Contatos from "./Contatos"
 import LeftContent from "./LeftContent"
 import RightContent from "./RightContent"
 
@@ -11,6 +12,7 @@ export default function AboutMe() {
                 <LeftContent />
                 <RightContent />
             </div>
+            <Contatos />
         </Container>
     )
 }
