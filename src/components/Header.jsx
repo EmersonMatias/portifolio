@@ -1,13 +1,15 @@
+import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import GeneralButton from "./GeneralButton"
 
-
 export default function Header() {
+    const navigate = useNavigate()
+
     return (
         <Container>
-            <GeneralButton text="Inicio" onclick={() => alert("OI")}/>
+            <GeneralButton text="Inicio" onclick={() => navigate("/")}/>
             <GeneralButton text="Portifólio"/>
-            <GeneralButton text="Sobre mim  "/>
+            <GeneralButton text="Sobre mim" onclick={() => navigate("/sobremim")}/>
         </Container>
     )
 }

@@ -17,7 +17,6 @@ const Container = styled.button`
     color: #FFFFFF;
     background: linear-gradient(171deg, rgba(121, 60, 161, 1) 7%, rgba(240, 123, 44, 1));
     border-radius: 32px;
-
     margin-right: 3.2rem;
     padding: 0 4.8rem;
     cursor: pointer;
