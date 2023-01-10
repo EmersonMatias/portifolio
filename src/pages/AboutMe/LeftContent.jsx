@@ -21,7 +21,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: black;
-    margin-left: 8rem;
+    margin-left: 16rem;
 
     .image{
         width: 27vw;
