@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Header from "../../components/Header"
 import LeftContent from "./LeftContent"
+import RightContent from "./RightContent"
 
 export default function AboutMe() {
     return (
@@ -8,9 +9,7 @@ export default function AboutMe() {
             <Header />
             <div className="mainContent">
                 <LeftContent />
-                <div className="rightContent">
-                    aa
-                </div>
+                <RightContent />
             </div>
         </Container>
     )
@@ -27,12 +26,6 @@ const Container = styled.div`
     .mainContent{
         display: flex;
         justify-content: space-between;
-        background-color: pink;
-    }
-
-    .rightContent{
-        width: 41vw;
-        background-color: antiquewhite;
-        margin-right: 8rem;
+        margin-top: 10.4rem;
     }
 `

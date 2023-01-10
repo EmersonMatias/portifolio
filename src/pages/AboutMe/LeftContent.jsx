@@ -34,12 +34,14 @@ const Container = styled.div`
         font-size: 8rem;
         line-height: 9.6rem;
         font-weight: 300;
+        margin-bottom: 4rem;
     }
 
     p{
         font-size: 3rem;
         font-weight: 300;
-        text-align: justify;
+        line-height: 3.5rem;
+        text-align: center;
     }
     
 `
