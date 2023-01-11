@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Footer from "../../components/Footer"
 import HeroSection from "./HeroSection"
 import HomeSection2 from "./Home_Section_2"
 
@@ -7,7 +8,7 @@ export default function Home() {
         <Container>
             <HeroSection />
             <HomeSection2 />
-
+            <Footer />
         </Container>
     )
 }
