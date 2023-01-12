@@ -6,7 +6,6 @@ import HeroSectionImage from "../../images/HeroSection.png"
 export default function HeroSection() {
     return (
         <Container>
-            <Header />
             <div className="content">
                 <h2>Emerson Matthias</h2>
                 <h1> Desenvolvedor Full Stack & Web Designer</h1>
@@ -31,7 +30,7 @@ const Container = styled.div`
     .content{
         width: 65vw;
         text-align: center;
-        margin-top: 8rem;
+        margin-top: 14rem;
     }
 
     h2{

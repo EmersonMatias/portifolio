@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-export default function GeneralButton2({ text, onclick}) {
+export default function GeneralButton2({ text, onclick, icon}) {
     return (
         <Container>
-            <button onClick={onclick}><p>{text}</p></button>
+            <button onClick={onclick}><p>{text}</p><img src={icon}/></button>
         </Container>
     )
 }
@@ -26,7 +26,10 @@ const Container = styled.div`
         background-color: #292929;
         color: #FFFFFF;
         cursor: pointer;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
         p{
             font-size: 1.7rem;
             font-weight: bold;
@@ -35,6 +38,12 @@ const Container = styled.div`
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        img{
+            width: 3rem;
+            height: 3rem;
+            margin-left: 0.8rem;
         }
      
     }

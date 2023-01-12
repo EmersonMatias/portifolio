@@ -5,9 +5,11 @@ import LeftContent from "./LeftContent"
 import RightContent from "./RightContent"
 
 export default function AboutMe() {
+    const page = "Sobre mim";
+    
     return (
         <Container>
-            <Header />
+            <Header page={page}/>
             <div className="mainContent">
                 <LeftContent />
                 <RightContent />
@@ -28,6 +30,6 @@ const Container = styled.div`
     .mainContent{
         display: flex;
         justify-content: space-between;
-        margin-top: 10.4rem;
+        margin-top: 15rem;
     }
 `
