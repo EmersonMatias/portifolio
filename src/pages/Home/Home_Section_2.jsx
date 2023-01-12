@@ -1,17 +1,25 @@
 import styled from "styled-components"
+import sendIcon from "../../images/sendIcon.svg"
+import bottomIcon from "../../images/bottomIcon.svg"
+import { links } from "../AboutMe/text"
 
-export default function HomeSection2(){
-    return(
+
+export default function HomeSection2() {
+    return (
         <Container>
             <p className="textContent">
-            Quer um site moderno? Ou quem sabe clássico e elegante? Até mesmo deslocado e estiloso como você? Então, 
-            está  no lugar certo. Criação de sites personalizados que representam a essência de sua loja, produto ou pessoa. 
-            Se é isso que está procurando:
+                Quer um site moderno? Ou quem sabe clássico e elegante? Até mesmo deslocado e estiloso como você? Então,
+                está  no lugar certo. Criação de sites personalizados que representam a essência de sua loja, produto ou pessoa.
+                Se é isso que está procurando:
             </p>
-          <div className="buttons">
-            <button>Mande uma mensagem</button>
-            <button>Veja meu trabalho</button>
-          </div>
+            <div className="buttons">
+                <button onClick={() => window.open(links.whatsapp, `_blank`)} >
+                    Mande uma mensagem<img src={sendIcon} className="sendIcon" />
+                </button>
+                <button>
+                    Veja meu trabalho <img src={bottomIcon} className="bottomIcon" />
+                </button>
+            </div>
         </Container>
     )
 }
@@ -36,11 +44,15 @@ const Container = styled.div`
 
     .buttons{
         margin-top: 80px;
+        display: flex;
     }
 
     button{
         width: 50rem;
         height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 3.4rem;
         font-weight: 600;
         line-height: 4.4rem;
@@ -51,6 +63,20 @@ const Container = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        img{
+            margin-left: 1rem;
+        }
+
+        .sendIcon{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .bottomIcon{
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
 `
